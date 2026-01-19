@@ -120,13 +120,13 @@
           │  Q       W       E       R       T         │ │  Y       U       I       O       P         │
           │  A/Alt   S/Sft   D/Ctl   F/Gui   G         │ │  H       J/Gui   K/Ctl   L/Sft   ;/Alt     │
           │  Z       X       C       V       B         │ │  N       M       ,       .       /         │
-          ╰─────────────────╮ TAB    SPC     ESC       │ │  "       ENT     BSPC   ╭──────────────────╯
+          ╰─────────────────╮ TAB    SPC     ESC       │ │  "       BSPC     ENT   ╭──────────────────╯
                             ╰───────────────────── ────╯ ╰─────────────────────────╯
         */
                    &kp Q        &kp W         &kp E               &kp R              &kp T       &kp Y               &kp U               &kp I                    &kp O         &kp P
                    &lhm LALT A  &lhm LSHFT S  &lhm LCTRL D        &lhm LGUI F        &kp G       &kp H               &rhm LGUI J         &rhm LCTRL K             &rhm LSHFT L  &rhm LALT SEMI
                    &kp Z        &kp X         &kp C               &kp V              &kp B       &kp N               &kp M               &kp COMMA                &kp DOT       &kp FSLH
-                 /*&            &*/           &base_lt SYM_L TAB  &base_lt NAV_L SPC &kp ESC     &base_lt SYM_L DQT  &base_lt NUM_L RET  &base_lt FUN_L BSPC   /* &             &*/
+                 /*&            &*/           &base_lt SYM_L TAB  &base_lt NAV_L SPC &kp ESC     &base_lt SYM_L DQT  &base_lt NUM_L BSPC  &base_lt FUN_L RET   /* &             &*/
             >;
         };
 
