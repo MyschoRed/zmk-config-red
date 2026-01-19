@@ -1,0 +1,11 @@
+file_format: "1"
+id: rae_dux_v2
+name: rae-dux-v2
+type: shield
+url: https://github.com/andrewjrae/rae-dux
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - rae_dux_v2_left
+  - rae_dux_v2_right
