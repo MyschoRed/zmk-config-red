@@ -118,32 +118,32 @@
         /*
           ╭────────────────────────────────────────────╮ ╭────────────────────────────────────────────╮
           │  Q       W       E       R       T         │ │  Y       U       I       O       P         │
-          │  A/Alt   S/Sft   D/Ctl   F/Gui   G         │ │  H       J/Gui   K/Ctl   L/Sft   ;/Alt     │
+          │  A/Sft   S/Ctl   D/Alt   F/Gui   G         │ │  H       J/Gui   K/Alt   L/Ctl   ;/Sft     │
           │  Z       X       C       V       B         │ │  N       M       ,       .       /         │
-          ╰─────────────────╮ TAB    SPC     ESC       │ │  "       BSPC     ENT   ╭──────────────────╯
-                            ╰───────────────────── ────╯ ╰─────────────────────────╯
+          ╰─────────────────╮ TAB    SPC     ESC       │ │  "       BSPC    ENT    ╭──────────────────╯
+                            ╰─────────────────────────╯ ╰─────────────────────────╯
         */
                    &kp Q        &kp W         &kp E               &kp R              &kp T       &kp Y               &kp U               &kp I                    &kp O         &kp P
-                   &lhm LALT A  &lhm LSHFT S  &lhm LCTRL D        &lhm LGUI F        &kp G       &kp H               &rhm LGUI J         &rhm LCTRL K             &rhm LSHFT L  &rhm LALT SEMI
+                   &lhm LSHFT A &lhm LCTRL S  &lhm LALT D         &lhm LGUI F        &kp G       &kp H               &rhm LGUI J         &rhm LALT K              &rhm LCTRL L  &rhm LSHFT SEMI
                    &kp Z        &kp X         &kp C               &kp V              &kp B       &kp N               &kp M               &kp COMMA                &kp DOT       &kp FSLH
                  /*&            &*/           &base_lt SYM_L TAB  &base_lt NAV_L SPC &kp ESC     &base_lt SYM_L DQT  &base_lt NUM_L BSPC  &base_lt FUN_L RET   /* &             &*/
             >;
-        };
+        };f
 
 
-        // NUM - Aktivácia: Drž ENT (pos 34)
+        // NUM - Aktivácia: Drž BSPC(pos 34)
 		num_layer {
 			bindings = <
         /*
           ╭────────────────────────────────────────────╮ ╭────────────────────────────────────────────╮
           │  -       <       -       >       -         │ │  -       -       =       -       -         │
-          │  1/Alt   2/Sft   3/Ctl   4/Gui   5         │ │  6       7/Gui   8/Ctl   9/Sft   0/Alt     │
+          │  1/Sft   2/Ctl   3/Alt   4/Gui   5         │ │  6       7/Gui   8/Alt   9/Ctl   0/Sft     │
           │  /       +       ^       *       -         │ │  -       -       ,       .       -         │
           ╰─────────────────╮ ---    ---     ---       │ │  ---     ---     ---    ╭──────────────────╯
-                            ╰───────────────────── ────╯ ╰─────────────────────────╯
+                            ╰─────────────────────────╯ ╰─────────────────────────╯
         */
                    &trans       &kp LT        &kp MINUS     &kp GT             &trans             &trans              &trans           &kp EQUAL                &trans        &trans
-                   &lhm LALT N1 &lhm LSHFT N2 &lhm LCTRL N3 &lhm LGUI N4       &kp N5             &kp N6              &rhm LGUI N7     &rhm LCTRL N8            &rhm LSHFT N9 &rhm LALT N0
+                   &lhm LSHFT N1 &lhm LCTRL N2 &lhm LALT N3 &lhm LGUI N4       &kp N5             &kp N6              &rhm LGUI N7     &rhm LALT N8             &rhm LCTRL N9 &rhm LSHFT N0
                    &kp FSLH     &kp PLUS      &kp CARET     &kp STAR           &trans             &trans              &trans           &kp COMMA                &kp DOT       &trans
 				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans    /*             &             &*/
 			>;
@@ -158,7 +158,7 @@
           │  #       <       -       >       `         │ │  &       {       (       )       |         │
           │  /       +       ^       *       _         │ │  %       }       [       ]       -         │
           ╰─────────────────╮ ---    ---     ---       │ │  ---     ---     ---    ╭──────────────────╯
-                            ╰────────────────── ───────╯ ╰─────────────────────────╯
+                            ╰──────────────────-───────╯ ╰─────────────────────────╯
         */
                    &trans       &kp EXCL      &kp AT        &kp DLLR           &trans             &trans              &kp TILDE        &kp EQUAL                &kp BSLH      &trans
                    &kp HASH     &kp LT        &kp MINUS     &kp GT             &kp GRAVE          &kp AMPS            &kp LBRC         &kp LPAR                 &kp RPAR      &kp PIPE
@@ -176,7 +176,7 @@
           │  END     NEXT    PLAY    VOL+    DEL       │ │  ←       ↓       ↑       →       HOME      │
           │  -       PREV    MUTE    VOL-    _         │ │  W←      PGDN    PGUP    W→      -         │
           ╰─────────────────╮ ---    ---     ---       │ │  BT<     BT>     BT_CLR ╭──────────────────╯
-                            ╰──────────────── ─────────╯ ╰─────────────────────────╯
+                            ╰────────────────-─────────╯ ╰─────────────────────────╯
         */
                    &trans       &kp PSCRN     &kp MY_COPY   &kp MY_PSCRN       &kp MY_PASTE       &trans              &kp C_BRI_DEC    &kp C_BRI_INC            &kp VI_U      &bootloader
                    &kp END      &kp C_NEXT    &kp C_PP      &kp C_VOL_UP       &kp DEL            &kp LEFT            &kp DOWN         &kp UP                   &kp RIGHT     &kp HOME
@@ -185,7 +185,7 @@
 			>;
 		};
 
-        // FUN - Aktivácia: Drž BSPC (pos 35)
+        // FUN - Aktivácia: Drž ENT (pos 35)
 		function_layer {
 			bindings = <
         /*
@@ -194,7 +194,7 @@
           │  F1      F2      F3      F4      F5        │ │  F6      F7      F8      F9      F10       │
           │  -       -       -       F11     -         │ │  -       F12     -       -       -         │
           ╰─────────────────╮ ---    ---     ---       │ │  ---     ---     ---    ╭──────────────────╯
-                            ╰──────────────── ─────────╯ ╰─────────────────────────╯
+                            ╰────────────────-─────────╯ ╰─────────────────────────╯
         */
                    &trans       &trans        &trans        &trans             &trans             &trans              &trans           &trans                   &trans        &trans
                    &kp F1       &kp F2        &kp F3        &kp F4             &kp F5             &kp F6              &kp F7           &kp F8                   &kp F9        &kp F10

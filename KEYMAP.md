@@ -38,16 +38,16 @@
 | 7 | I | `i` | - | |
 | 8 | O | `o` | - | |
 | 9 | P | `p` | - | |
-| 10 | A | `a` | `Alt` | Home row mod - ľavý Alt |
-| 11 | S | `s` | `Shift` | Home row mod - ľavý Shift |
-| 12 | D | `d` | `Ctrl` | Home row mod - ľavý Control |
+| 10 | A | `a` | `Shift` | Home row mod - ľavý Shift |
+| 11 | S | `s` | `Ctrl` | Home row mod - ľavý Control |
+| 12 | D | `d` | `Alt` | Home row mod - ľavý Alt |
 | 13 | F | `f` | `Gui` | Home row mod - ľavý Cmd/Win |
 | 14 | G | `g` | - | |
 | 15 | H | `h` | - | |
 | 16 | J | `j` | `Gui` | Home row mod - pravý Cmd/Win |
-| 17 | K | `k` | `Ctrl` | Home row mod - pravý Control |
-| 18 | L | `l` | `Shift` | Home row mod - pravý Shift |
-| 19 | ; | `;` | `Alt` | Home row mod - pravý Alt |
+| 17 | K | `k` | `Alt` | Home row mod - pravý Alt |
+| 18 | L | `l` | `Ctrl` | Home row mod - pravý Control |
+| 19 | ; | `;` | `Shift` | Home row mod - pravý Shift |
 | 20 | Z | `z` | - | |
 | 21 | X | `x` | - | |
 | 22 | C | `c` | - | |
@@ -94,16 +94,16 @@ Aktivácia: Drž `ENT` (pos 34)
 | 7 | = | `=` | - | Rovná sa |
 | 8 | - | `trans` | - | |
 | 9 | - | `trans` | - | |
-| 10 | 1 | `1` | `Alt` | |
-| 11 | 2 | `2` | `Shift` | |
-| 12 | 3 | `3` | `Ctrl` | |
+| 10 | 1 | `1` | `Shift` | |
+| 11 | 2 | `2` | `Ctrl` | |
+| 12 | 3 | `3` | `Alt` | |
 | 13 | 4 | `4` | `Gui` | |
 | 14 | 5 | `5` | - | |
 | 15 | 6 | `6` | - | |
 | 16 | 7 | `7` | `Gui` | |
-| 17 | 8 | `8` | `Ctrl` | |
-| 18 | 9 | `9` | `Shift` | |
-| 19 | 0 | `0` | `Alt` | |
+| 17 | 8 | `8` | `Alt` | |
+| 18 | 9 | `9` | `Ctrl` | |
+| 19 | 0 | `0` | `Shift` | |
 | 20 | / | `/` | - | Lomka |
 | 21 | + | `+` | - | Plus |
 | 22 | ^ | `^` | - | Caret |
@@ -277,10 +277,10 @@ Klávesy v prostrednom rade majú dvojitú funkciu:
 
 ```
 Ľavá ruka:          Pravá ruka:
-A = Alt             J = Gui
-S = Shift           K = Ctrl
-D = Ctrl            L = Shift
-F = Gui             ; = Alt
+A = Shift           J = Gui
+S = Ctrl            K = Alt
+D = Alt             L = Ctrl
+F = Gui             ; = Shift
 ```
 
 ### Layer Tap (Thumb klávesy)
