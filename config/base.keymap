@@ -18,11 +18,11 @@
     /delete-property/ ignore-modifiers;
 };
 
-#define RSTHD_L 0
-#define NUM_L   1
-#define SYM_L   2
-#define NAV_L   3
-#define FUN_L   4
+#define QWERTY_L 0
+#define NUM_L    1
+#define SYM_L    2
+#define NAV_L    3
+#define FUN_L    4
 
 #define MY_PSCRN LS(LC(PSCRN))
 #define MY_COPY LC(INSERT)
@@ -112,13 +112,21 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-        // RSTHD
-		rsthd_layer {
+        // QWERTY
+		qwerty_layer {
 			bindings = <
-                   &kp Z        &kp C         &kp Y         &kp F              &kp P              &kp X               &kp M            &kp APOS                 &kp U         &kp Q
-                   &lhm LALT R  &lhm LSHFT S  &lhm LCTRL T  &lhm LGUI H        &kp D              &kp L               &rhm LGUI N      &rhm LCTRL A             &rhm LSHFT I  &rhm LALT O
-                   &sk LSHIFT   &kp V         &kp G         &kp K              &kp B              &kp W               &kp J            &kp COMMA                &key_repeat   &sk LSHIFT
-				 /*&            &*/           &kp ESC       &base_lt NAV_L SPC &base_lt SYM_L TAB &base_lt SYM_L BSPC &base_lt NUM_L E &base_lt FUN_L DOT    /* &             &*/
+        /*
+          ╭────────────────────────────────────────────╮ ╭────────────────────────────────────────────╮
+          │  Q       W       E       R       T         │ │  Y       U       I       O       P         │
+          │  A/Alt   S/Sft   D/Ctl   F/Gui   G         │ │  H       J/Gui   K/Ctl   L/Sft   ;/Alt     │
+          │  Z       X       C       V       B         │ │  N       M       ,       .       /         │
+          ╰─────────────────╮ ESC    SPC     TAB       │ │  BSPC    ENT     '       ╭─────────────────╯
+                            ╰─────────────────────────╯ ╰─────────────────────────╯
+        */
+                   &kp Q        &kp W         &kp E         &kp R              &kp T              &kp Y               &kp U            &kp I                    &kp O         &kp P
+                   &lhm LALT A  &lhm LSHFT S  &lhm LCTRL D  &lhm LGUI F        &kp G              &kp H               &rhm LGUI J      &rhm LCTRL K             &rhm LSHFT L  &rhm LALT SEMI
+                   &kp Z        &kp X         &kp C         &kp V              &kp B              &kp N               &kp M            &kp COMMA                &kp DOT       &kp FSLH
+				 /*&            &*/           &kp ESC       &base_lt NAV_L SPC &base_lt SYM_L TAB &base_lt SYM_L BSPC &base_lt NUM_L RET &base_lt FUN_L APOS  /* &             &*/
 			>;
 		};
 
