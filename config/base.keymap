@@ -128,7 +128,7 @@
                    &kp Z        &kp X         &kp C               &kp V              &kp B       &kp N               &kp M               &kp COMMA                &kp DOT       &kp FSLH
                  /*&            &*/           &base_lt SYM_L TAB  &base_lt NAV_L SPC &kp ESC     &base_lt SYM_L DQT  &base_lt NUM_L BSPC  &base_lt FUN_L RET   /* &             &*/
             >;
-        };f
+        };
 
 
         // NUM - Aktivácia: Drž BSPC(pos 34)
