@@ -67,6 +67,9 @@
 
         COMBO(reset_left, &bootloader, 0 1 2 3, 100)
         // COMBO(reset_right, &bootloader, 6 7 8 9, 100)
+
+        // A + BSPC = kontinuálny backspace (obíde hold-tap)
+        COMBO(repeat_bspc, &kp BSPC, 10 34, 60)
     };
 
     behaviors {
