@@ -1,2 +1,8 @@
 
 .zmk/
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/prettier.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/vcs.xml
+/.idea/zmk-config-red.iml

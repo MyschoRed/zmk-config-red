@@ -20,7 +20,7 @@
 │  Q    W    E    R    T  │ │  Y    U    I    O    P  │
 │  A    S    D    F    G  │ │  H    J    K    L    ;  │
 │  Z    X    C    V    B  │ │  N    M    ,    .    /  │
-╰───────────╮ TAB  SPC  ESC│ │  "   ENT  BSPC╭─────────╯
+╰───────────╮ TAB  SPC  ESC│ │  "  BSPC  ENT ╭─────────╯
             ╰──────────────╯ ╰──────────────╯
 ```
 
@@ -62,14 +62,14 @@
 | 31 | SPC | `Space` | `NAV layer` | Medzera / Navigačná vrstva |
 | 32 | ESC | `Escape` | - | |
 | 33 | " | `"` | `SYM layer` | Úvodzovky / Symboly |
-| 34 | ENT | `Enter` | `NUM layer` | Enter / Čísla |
-| 35 | BSPC | `Backspace` | `FUN layer` | Mazanie / Funkčné klávesy |
+| 34 | BSPC | `Backspace` | `NUM layer` | Mazanie / Čísla |
+| 35 | ENT | `Enter` | `FUN layer` | Enter / Funkčné klávesy |
 
 ---
 
 ## Layer 1: NUM (Čísla)
 
-Aktivácia: Drž `ENT` (pos 34)
+Aktivácia: Drž `BSPC` (pos 34)
 
 ```
 ╭─────────────────────────╮ ╭─────────────────────────╮
@@ -171,7 +171,7 @@ Aktivácia: Drž `SPC` (pos 31)
 │  -   PSCR COPY PSCR+ PST│ │  -   BRI- BRI+ UNDO BOOT│
 │ END  NEXT PLAY VOL+ DEL │ │  ←    ↓    ↑    →  HOME │
 │  -   PREV MUTE VOL-  _  │ │ W←  PGDN PGUP  W→   -   │
-╰───────────╮ ---  ---  ---│ │ BT<  BT> BT_CLR╭────────╯
+╰───────────╮ ---  ---  ---│ │ ---  ---  --- ╭────────╯
             ╰──────────────╯ ╰──────────────╯
 ```
 
@@ -208,44 +208,48 @@ Aktivácia: Drž `SPC` (pos 31)
 | 26 | PGDN | `Page Down` | Strana dole |
 | 27 | PGUP | `Page Up` | Strana hore |
 | 28 | W→ | `Ctrl+Right` | Slovo vpravo |
-| 29 | - | `trans` | |
-| 30-32 | - | `trans` | |
-| 33 | BT< | `BT Previous` | Predchádzajúce BT zariadenie |
-| 34 | BT> | `BT Next` | Ďalšie BT zariadenie |
-| 35 | BT_CLR | `BT Clear` | Vymazať BT párovanie |
+| 29-35 | - | `trans` | |
 
 ---
 
-## Layer 4: FUN (Funkčné klávesy)
+## Layer 4: FUN (Funkčné klávesy + Bluetooth)
 
-Aktivácia: Drž `BSPC` (pos 35)
+Aktivácia: Drž `ENT` (pos 35)
 
 ```
 ╭─────────────────────────╮ ╭─────────────────────────╮
-│  -    -    -    -    -  │ │  -    -    -    -    -  │
+│ BT0  BT1  BT2  BT3  BT4 │ │  -    -    -    -    -  │
 │  F1   F2   F3   F4   F5 │ │  F6   F7   F8   F9  F10 │
 │  -    -    -   F11   -  │ │  -   F12   -    -    -  │
-╰───────────╮ ---  ---  ---│ │ ---  ---  ---╭──────────╯
+╰───────────╮ BT<  BT> BTCLR│ │ ---  ---  ---╭─────────╯
             ╰──────────────╯ ╰──────────────╯
 ```
 
 ### Detailny popis Layer 4
 
-| Pos | Kláves | Funkcia |
-|-----|--------|---------|
-| 10 | F1 | `F1` |
-| 11 | F2 | `F2` |
-| 12 | F3 | `F3` |
-| 13 | F4 | `F4` |
-| 14 | F5 | `F5` |
-| 15 | F6 | `F6` |
-| 16 | F7 | `F7` |
-| 17 | F8 | `F8` |
-| 18 | F9 | `F9` |
-| 19 | F10 | `F10` |
-| 23 | F11 | `F11` |
-| 26 | F12 | `F12` |
-| ostatné | - | `trans` |
+| Pos | Kláves | Funkcia | Popis |
+|-----|--------|---------|-------|
+| 0 | BT0 | `BT_SEL 0` | Bluetooth profil 0 |
+| 1 | BT1 | `BT_SEL 1` | Bluetooth profil 1 |
+| 2 | BT2 | `BT_SEL 2` | Bluetooth profil 2 |
+| 3 | BT3 | `BT_SEL 3` | Bluetooth profil 3 |
+| 4 | BT4 | `BT_SEL 4` | Bluetooth profil 4 |
+| 10 | F1 | `F1` | |
+| 11 | F2 | `F2` | |
+| 12 | F3 | `F3` | |
+| 13 | F4 | `F4` | |
+| 14 | F5 | `F5` | |
+| 15 | F6 | `F6` | |
+| 16 | F7 | `F7` | |
+| 17 | F8 | `F8` | |
+| 18 | F9 | `F9` | |
+| 19 | F10 | `F10` | |
+| 23 | F11 | `F11` | |
+| 26 | F12 | `F12` | |
+| 30 | BT< | `BT_PRV` | Predchádzajúci BT profil |
+| 31 | BT> | `BT_NXT` | Ďalší BT profil |
+| 32 | BT_CLR | `BT_CLR` | Vymazať BT párovanie |
+| ostatné | - | `trans` | |
 
 ---
 
@@ -261,7 +265,7 @@ Stlač súčasne dva klávesy pre špeciálnu akciu:
 | , + . | 27 + 28 | `;` | Bodkočiarka |
 | W + E | 1 + 2 | `/` | Lomka |
 | SPC + ESC | 31 + 32 | `-` | Mínus |
-| " + ENT | 33 + 34 | `_` | Podčiarkovník |
+| " + BSPC | 33 + 34 | `_` | Podčiarkovník |
 | D + V | 12 + 23 | `=` | Rovná sa |
 | K + M | 17 + 26 | `Enter` | Enter |
 | Q+W+E+R | 0+1+2+3 | `Bootloader` | Reset do bootloadera |
@@ -291,8 +295,8 @@ F = Gui             ; = Shift
 | 31 | Space | NAV layer |
 | 32 | Escape | - |
 | 33 | " | SYM layer |
-| 34 | Enter | NUM layer |
-| 35 | Backspace | FUN layer |
+| 34 | Backspace | NUM layer |
+| 35 | Enter | FUN layer |
 
 ### Sticky Key (sk)
 - Stlačíš modifier, pustíš, ďalší kláves bude s modifierom
