@@ -118,9 +118,9 @@ Aktivácia: Drž `TAB` (pos 30) alebo `"` (pos 33)
 
 ```
 ╭─────────────────────────╮ ╭─────────────────────────╮
-│  -    !    @    $    -  │ │  -    ~    =    \    -  │
-│  #    <    -    >    `  │ │  &    {    (    )    |  │
-│  /    +    ^    *    _  │ │  %    }    [    ]    -  │
+│  -    !    @    $    -  │ │  -    ~    =    \   ´/ˇ │
+│  #    <    -    >    `  │ │  &    (    [    {    |  │
+│  /    +    ^    *    _  │ │  %    )    ]    }    -  │
 ╰───────────╮ ---  ---  ---│ │ ---  ---  ---╭──────────╯
             ╰──────────────╯ ╰──────────────╯
 ```
@@ -138,16 +138,16 @@ Aktivácia: Drž `TAB` (pos 30) alebo `"` (pos 33)
 | 6 | ~ | `~` | Tilda |
 | 7 | = | `=` | Rovná sa |
 | 8 | \ | `\` | Spätná lomka |
-| 9 | - | `trans` | |
+| 9 | ´/ˇ | `´` (tap) / `ˇ` (hold) | Dĺžeň / Mäkčeň (SK layout) |
 | 10 | # | `#` | Hash |
 | 11 | < | `<` | Menší než |
 | 12 | - | `-` | Mínus |
 | 13 | > | `>` | Väčší než |
 | 14 | ` | `` ` `` | Backtick |
 | 15 | & | `&` | Ampersand |
-| 16 | { | `{` | Ľavá zložená zátvorka |
-| 17 | ( | `(` | Ľavá zátvorka |
-| 18 | ) | `)` | Pravá zátvorka |
+| 16 | ( | `(` | Ľavá zátvorka |
+| 17 | [ | `[` | Ľavá hranatá zátvorka |
+| 18 | { | `{` | Ľavá zložená zátvorka |
 | 19 | \| | `\|` | Pipe |
 | 20 | / | `/` | Lomka |
 | 21 | + | `+` | Plus |
@@ -155,9 +155,9 @@ Aktivácia: Drž `TAB` (pos 30) alebo `"` (pos 33)
 | 23 | * | `*` | Hviezdička |
 | 24 | _ | `_` | Podčiarkovník |
 | 25 | % | `%` | Percento |
-| 26 | } | `}` | Pravá zložená zátvorka |
-| 27 | [ | `[` | Ľavá hranatá zátvorka |
-| 28 | ] | `]` | Pravá hranatá zátvorka |
+| 26 | ) | `)` | Pravá zátvorka |
+| 27 | ] | `]` | Pravá hranatá zátvorka |
+| 28 | } | `}` | Pravá zložená zátvorka |
 | 29 | - | `trans` | |
 
 ---
@@ -297,6 +297,11 @@ F = Gui             ; = Shift
 | 33 | " | SYM layer |
 | 34 | Backspace | NUM layer |
 | 35 | Enter | FUN layer |
+
+### Slovak Accent (SYM vrstva, pos 9)
+- **Tap:** ´ (dĺžeň) - EQUAL na SK klávesnici
+- **Hold:** ˇ (mäkčeň) - Shift+EQUAL na SK klávesnici
+- Vyžaduje prepnutý SK layout v OS
 
 ### Sticky Key (sk)
 - Stlačíš modifier, pustíš, ďalší kláves bude s modifierom

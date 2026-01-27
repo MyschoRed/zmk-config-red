@@ -110,6 +110,18 @@
             bindings = <&mo>, <&kp>;
         };
 
+        // Slovak accent: tap = ´ (dĺžeň), hold = ˇ (mäkčeň) - vyžaduje SK layout v OS
+        sk_accent: slovak_accent_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SLOVAK_ACCENT";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+
     };
 
 	keymap {
@@ -157,15 +169,15 @@
 			bindings = <
         /*
           ╭────────────────────────────────────────────╮ ╭────────────────────────────────────────────╮
-          │  -       !       @       $       -         │ │  -       ~       =       \       -         │
-          │  #       <       -       >       `         │ │  &       {       (       )       |         │
-          │  /       +       ^       *       _         │ │  %       }       [       ]       -         │
+          │  -       !       @       $       -         │ │  -       ~       =       \       ´/ˇ       │
+          │  #       <       -       >       `         │ │  &       (       [       {       |         │
+          │  /       +       ^       *       _         │ │  %       )       ]       }       -         │
           ╰─────────────────╮ ---    ---     ---       │ │  ---     ---     ---    ╭──────────────────╯
                             ╰──────────────────-───────╯ ╰─────────────────────────╯
         */
-                   &trans       &kp EXCL      &kp AT        &kp DLLR           &trans             &trans              &kp TILDE        &kp EQUAL                &kp BSLH      &trans
-                   &kp HASH     &kp LT        &kp MINUS     &kp GT             &kp GRAVE          &kp AMPS            &kp LBRC         &kp LPAR                 &kp RPAR      &kp PIPE
-                   &kp FSLH     &kp PLUS      &kp CARET     &kp STAR           &kp UNDER          &kp PRCNT           &kp RBRC         &kp LBKT                 &kp RBKT      &trans
+                   &trans       &kp EXCL      &kp AT        &kp DLLR           &trans             &trans              &kp TILDE        &kp EQUAL                &kp BSLH      &sk_accent LS(EQUAL) EQUAL
+                   &kp HASH     &kp LT        &kp MINUS     &kp GT             &kp GRAVE          &kp AMPS            &kp LPAR         &kp LBKT                 &kp LBRC      &kp PIPE
+                   &kp FSLH     &kp PLUS      &kp CARET     &kp STAR           &kp UNDER          &kp PRCNT           &kp RPAR         &kp RBKT                 &kp RBRC      &trans
 				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans    /*             &             &*/
 			>;
 		};
