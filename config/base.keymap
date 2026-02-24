@@ -70,6 +70,20 @@
 
         // A + BSPC = kontinuálny backspace (obíde hold-tap)
         COMBO(repeat_bspc, &kp BSPC, 10 34, 60)
+
+        // Double Shift pre PyCharm Search Everywhere
+        COMBO(dbl_shift_left, &double_shift, 3 4, 60)
+        COMBO(dbl_shift_right, &double_shift, 5 6, 60)
+    };
+
+    macros {
+        double_shift: double_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LSHFT &kp LSHFT>;
+        };
     };
 
     behaviors {
